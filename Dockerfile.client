@@ -1,0 +1,7 @@
+FROM openjdk:8
+RUN \
+  apt-get update && \
+  mkdir /usr/app
+WORKDIR /usr/app
+COPY . /usr/app/
+
