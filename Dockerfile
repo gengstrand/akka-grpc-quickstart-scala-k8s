@@ -1,5 +1,4 @@
-FROM openjdk:14-jdk-alpine
-RUN apk add bash
+FROM openjdk:11
 RUN mkdir /usr/app
 WORKDIR /usr/app
 COPY target /usr/app/
