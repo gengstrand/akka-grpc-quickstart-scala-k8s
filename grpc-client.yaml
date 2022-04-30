@@ -11,5 +11,5 @@ spec:
       - name: grpc-client
         image: grpc-client:1.0
         env:
-        command: [ "/bin/sh", "-c", "./sbt \"runMain com.example.helloworld.GreeterClient Alice\"" ]
+        command: [ "/bin/sh", "-c", "universal/stage/bin/greeter-client Alice" ]
       restartPolicy: Never

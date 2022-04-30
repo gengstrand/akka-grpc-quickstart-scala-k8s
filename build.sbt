@@ -9,6 +9,7 @@ lazy val akkaHttpVersion = "10.2.9"
 lazy val akkaGrpcVersion = "2.1.4"
 
 enablePlugins(AkkaGrpcPlugin)
+enablePlugins(JavaAppPackaging)
 
 // Run in a separate JVM, to make sure sbt waits until all threads have
 // finished before returning.
@@ -34,3 +35,5 @@ libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-stream-testkit" % akkaVersion % Test,
   "org.scalatest" %% "scalatest" % "3.1.1" % Test
 )
+
+  

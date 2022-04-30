@@ -8,6 +8,7 @@ I got the actual [code](https://example.lightbend.com/v1/download/akka-grpc-quic
 
 ```bash
 sbt compile
+sbt stage
 docker build -t grpc-server:1.0 .
 # tag and push the image appropriately
 # edit the manifest to match what was pushed
